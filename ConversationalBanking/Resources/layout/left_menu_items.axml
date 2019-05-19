@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group
+      android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Dashboard"
+        android:checkable="false"
+        android:textSize="16sp" />
+    <item
+          android:id="@+id/nav_profileDetails"
+          android:icon="@drawable/account_circle"
+          android:title="Profile Details"
+          android:checkable="false"
+          android:textSize="16sp" />
+  </group>
+  <item
+      android:title="Extra Services">
+    <menu>
+      <item
+          android:icon="@drawable/add"
+          android:title="Upcoming Services"
+          android:checkable="false" />
+      <item
+          android:icon="@drawable/add"
+          android:title="Upcoming Services"
+          android:checkable="false" />
+      <item
+          android:icon="@drawable/add"
+          android:title="Upcoming Services"
+          android:checkable="false" />
+    </menu>
+  </item>
+</menu>

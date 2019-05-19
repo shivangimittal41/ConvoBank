@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">ConvoBank</string>
+  <string name="loginButton">Login to Continue</string>
+  <string name="signupHelp">To Register a New Account, Visit Nearest Bank</string>
+  <string name="openDrawer">Open Drawer</string>
+  <string name="closeDrawer">Close Drawer</string>
+  <string name="mainDashboardTitle">Dashboard</string>
+  <string name="mainServicesFundTransfer">Fund Transfers</string>
+  <string name="mainServicesAccountDetails">Account Details</string>
+  <string name="mainServicesPrevTransactions">Previous Transactions</string>
+  <string name="mainServicesBillPayment">Bill Payment</string>
+  <string name="user_name">default.user</string>
+  <string name="button_cancel">RESET</string>
+  <string name="button_transfer">TRANSFER</string>
+  <string name="button_backDashboard">BACK TO DASHBOARD</string>
+
+  <string name="default_balance">0987654321</string>
+  <string name="default_uidai">ABCD1234ABCD</string>
+  <string name="default_accNumber">123456789123</string>
+  <string name="default_TxnId">123456</string>
+  <string name="default_date">01/01/2018</string>
+  <string name="default_Remarks">Money Transfer Remarks</string>
+  <string name="default_ifsc">BANK1234</string>
+  <string name="default_customerName">Default User</string>
+  <string name="default_PAN">ABCDE12345</string>
+  <string name="default_Email">defaultemail@email.com</string>
+  <string name="default_Address">Default Address</string>
+  <string name="notEditableText">* All the Details are non-editable. If you wish to edit any Detail, Please Visit Registered Bank Branch.</string>
+  <string name="nullRemark">None.</string>
+</resources>

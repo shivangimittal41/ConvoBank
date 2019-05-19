@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  
+  <style name="MyCustomTheme" parent="Theme.AppCompat.Light">
+    <item name="colorPrimary">@color/primary</item>
+    <item name="android:statusBarColor">@color/primary_dark</item>
+    <item name="android:textColorPrimary">@color/primary_text</item>
+    <item name="colorPrimaryDark">@color/primary_dark</item>
+    <item name="colorAccent">@color/accent</item>
+    <item name="drawerArrowStyle">@style/MyDrawerArrowStyle</item>  
+  </style>
+
+  <style name="MyCustomThemeWithNoTitleBar" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/primary</item>
+    <item name="android:statusBarColor">@color/primary_dark</item>
+    <item name="android:textColorPrimary">@color/secondary_text</item>
+    <item name="colorPrimaryDark">@color/primary_dark</item>
+    <item name="colorAccent">@color/accent</item>
+    <item name="drawerArrowStyle">@style/MyDrawerArrowStyle</item>  
+  </style>
+  
+  <style name="MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">  
+   <item name="color">#F5F5F5</item>  
+   <item name="spinBars">true</item>  
+ </style>
+
+  <style name="drawerLogoutStyle">
+    <item name="android:textColorPrimary">@color/secondary_text</item>
+    <item name="android:textColorSecondary">@color/secondary_text</item>
+    <item name="android:tint">@color/secondary_text</item>
+  </style>
+
+  <style name="blueTint">
+    <item name="android:tint">@color/primary_dark</item>
+  </style>
+  
+  <style name="roundedButton">
+    <item name="android:background">@color/primary_dark</item>
+  </style>
+
+  <style name="ToolbarContent">
+    <item name="android:background">@color/primary</item>
+    <item name="android:textColorPrimary">@color/primary_dark</item>
+  </style>
+
+  <style name="DrawerContent">
+    <item name="android:background">@color/secondary_text</item>
+    <item name="android:textColorPrimary">@color/primary</item>
+  </style>
+
+  <style name="DrawerContentText" parent="MyCustomTheme">
+    <item name="android:textColorSecondary">@color/primary_dark</item>
+    <item name="android:textColorPrimary">@color/primary</item>
+  </style>
+
+  <style name="ToolbarContentWithoutBG" parent="MyCustomTheme">
+    <item name="android:textColorSecondary">@color/secondary_text</item>
+  </style>
+
+  <style name="helpingText">
+    <item name="android:textColor">@color/primary_dark</item>
+    <item name="android:textSize">16sp</item>
+  </style>
+  
+  <style name="availableBalance">
+    <item name="android:textColor">@color/primary_text</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="textBoldBlue">
+    <item name="android:textColor">@color/primary_dark</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="serviceCardText">
+    <item name="android:textColor">@color/primary_dark</item>
+    <item name="android:textSize">24sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+</resources>

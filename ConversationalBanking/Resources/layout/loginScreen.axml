@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/loginScreen_ParentLayout"
+    p1:minWidth="25px"
+    p1:minHeight="25px">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayout1">
+        <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/loginToolbar"
+            p1:elevation="4dp"
+            style="@style/ToolbarContent"
+            p1:theme="@style/ToolbarContentWithoutBG" />
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/linearLayout2"
+            p1:padding="12dp"
+            p1:background="@color/background"
+            p1:weightSum="1">
+            <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/cardView1"
+                app:cardElevation="4dp"
+                p1:elevation="4dp"
+                p1:layout_marginRight="4dp"
+                p1:layout_marginLeft="4dp"
+                p1:layout_marginTop="4dp"
+                p1:layout_marginBottom="4dp"
+                app:cardCornerRadius="4dp"
+                p1:layout_weight="0.5">
+                <LinearLayout
+                    p1:orientation="vertical"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/linearLayout5"
+                    p1:padding="16dp">
+                    <TextView
+                        p1:text="Welcome Back!"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/textView2"
+                        style="@style/helpingText"
+                        p1:layout_marginBottom="2dp"
+                        p1:textStyle="bold"
+                        p1:textSize="18sp"
+                        p1:textColor="@color/primary_dark" />
+                    <TextView
+                        p1:text="Login and Continue to Bank Services."
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/textView3"
+                        style="@style/helpingText"
+                        p1:layout_marginTop="2dp"
+                        p1:textSize="16sp"
+                        p1:textColor="@color/primary_dark" />
+                    <LinearLayout
+                        p1:orientation="vertical"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="match_parent"
+                        p1:id="@+id/linearLayout7"
+                        p1:gravity="center"
+                        p1:minWidth="25px"
+                        p1:minHeight="25px">
+                        <LinearLayout
+                            p1:orientation="horizontal"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout8"
+                            p1:padding="4dp"
+                            p1:gravity="left|center"
+                            p1:layout_marginBottom="8dp">
+                            <ImageView
+                                p1:src="@drawable/account_circle"
+                                p1:layout_width="32dp"
+                                p1:layout_height="32dp"
+                                p1:tint="@color/primary_dark"
+                                p1:id="@+id/imageView1"
+                                p1:layout_marginRight="4dp" />
+                            <EditText
+                                p1:layout_width="match_parent"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/login_CustomerId"
+                                p1:background="@drawable/mockup2_textfieldlowerborder"
+                                p1:textColor="#3F3F3F"
+                                p1:maxLength="12"
+                                p1:layout_marginLeft="4dp"
+                                p1:textColorHint="@color/primary_light"
+                                p1:hint="Customer Id"
+                                p1:paddingLeft="4dp"
+                                p1:paddingTop="4dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            p1:orientation="horizontal"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout8"
+                            p1:padding="4dp"
+                            p1:gravity="left|center"
+                            p1:layout_marginTop="8dp">
+                            <ImageView
+                                p1:src="@drawable/security"
+                                p1:layout_width="32dp"
+                                p1:layout_height="32dp"
+                                p1:tint="@color/primary_dark"
+                                p1:id="@+id/imageView1"
+                                p1:layout_marginRight="4dp" />
+                            <EditText
+                                p1:layout_width="match_parent"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/login_CustomerPassword"
+                                p1:background="@drawable/mockup2_textfieldlowerborder"
+                                p1:textColor="#3F3F3F"
+                                p1:maxLength="25"
+                                p1:layout_marginLeft="4dp"
+                                p1:textColorHint="@color/primary_light"
+                                p1:hint="Password"
+                                p1:paddingLeft="4dp"
+                                p1:paddingTop="4dp"
+                                p1:password="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/linearLayout3"
+                p1:layout_marginRight="4dp"
+                p1:layout_marginLeft="4dp"
+                p1:layout_marginTop="4dp"
+                p1:layout_marginBottom="4dp"
+                p1:layout_weight="0.5"
+                p1:gravity="bottom">
+                <Button
+                    p1:text="@string/loginButton"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/login_LoginButton"
+                    p1:background="@drawable/roundbutton_green"
+                    style="@style/roundedButton"
+                    p1:layout_marginBottom="16dp" />
+                <TextView
+                    p1:text="@string/signupHelp"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/login_SignupButton"
+                    p1:gravity="center"
+                    style="@style/helpingText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="primary">#001970</color>
+  <color name="primary_dark">#001970</color>
+  <color name="primary_light">#666ad1</color>
+  <color name="accent">#001970</color>
+  <color name="primary_text">#000000</color>
+  <color name="secondary_text">#ffffff</color>
+  <color name="icons">#FFFFFF</color>
+  <color name="divider">#BDBDBD</color>
+  <color name="background">#e7e7e7</color>
+  <color name="serviceCardBGText">#8c001970</color>
+  <color name="titleLight">#33001970</color>
+  <color name="dueDate">#88ce000c</color>
+  <color name="editTextColor">#3F3F3F</color>
+</resources>

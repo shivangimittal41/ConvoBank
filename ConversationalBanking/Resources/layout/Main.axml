@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/getStarted_ParentLayout"
+    p1:minWidth="25px"
+    p1:minHeight="25px">
+    <RelativeLayout
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/relativeLayout1"
+        p1:padding="20dp"
+        p1:background="@color/background">
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout1"
+            p1:layout_alignParentBottom="true"
+            p1:layout_centerHorizontal="true"
+            p1:gravity="bottom|center"
+            p1:layout_above="@id/linearLayout2">
+            <ImageView
+                p1:src="@drawable/microphone_off"
+                p1:layout_width="32dp"
+                p1:layout_height="32dp"
+                p1:tint="@color/primary_dark"
+                p1:id="@+id/imageView1" />
+            <Switch
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/convoBank_microPhoneToggle"
+                p1:layout_marginLeft="8dp"
+                p1:layout_marginRight="8dp"
+                p1:checked="true" />
+            <ImageView
+                p1:src="@drawable/microphone"
+                p1:layout_width="32dp"
+                p1:layout_height="32dp"
+                p1:tint="@color/primary_dark"
+                p1:id="@+id/imageView1" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/linearLayout2"
+            p1:layout_centerInParent="true"
+            p1:gravity="center">
+            <ImageView
+                p1:src="@drawable/mainlogoscreen"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/imageView2"
+                p1:scaleType="centerCrop" />
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/linearLayout3"
+                p1:gravity="center"
+                p1:layout_marginTop="20dp">
+                <android.support.design.widget.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+                    p1:id="@+id/convoBank_GetStarted"
+                    app:fabSize="normal"
+                    app:rippleColor="#ff303f9f"
+                    style="@style/roundedButton"
+                    p1:src="@drawable/bank"
+                    p1:layout_width="120dp"
+                    p1:layout_height="80dp"
+                    p1:layout_marginTop="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

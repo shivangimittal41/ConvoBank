@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/accountDetails_ParentLayout"
+    p1:minWidth="25px"
+    p1:minHeight="25px">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayout1"
+        p1:background="@color/background">
+        <android.support.v7.widget.Toolbar
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/accountDetails_Toolbar"
+            p1:elevation="4dp"
+            style="@style/ToolbarContent"
+            app:navigationIcon="@drawable/ic_action_accountdetails"
+            app:contentInsetStartWithNavigation="16dp"
+            p1:theme="@style/ToolbarContentWithoutBG" />
+        <ScrollView
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/scrollView1">
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="match_parent"
+                p1:layout_height="match_parent"
+                p1:id="@+id/linearLayout2"
+                p1:padding="12dp">
+                <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    p1:minWidth="25px"
+                    p1:minHeight="25px"
+                    p1:layout_width="fill_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/cardView1"
+                    p1:layout_alignParentTop="true"
+                    p1:layout_below="@id/linearLayout1"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp"
+                    p1:clipToPadding="false"
+                    app:cardUseCompatPadding="false"
+                    p1:elevation="4dp"
+                    p1:layout_marginRight="4dp"
+                    p1:layout_marginLeft="4dp"
+                    p1:layout_marginTop="4dp"
+                    p1:layout_marginBottom="12dp">
+                    <LinearLayout
+                        p1:orientation="vertical"
+                        p1:minWidth="25px"
+                        p1:minHeight="25px"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="match_parent"
+                        p1:id="@+id/linearLayout2"
+                        p1:padding="20dp">
+                        <LinearLayout
+                            p1:orientation="horizontal"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout4"
+                            p1:weightSum="1"
+                            p1:layout_marginBottom="16dp">
+                            <TextView
+                                p1:text="Your Bank Account Details"
+                                p1:id="@+id/textView2"
+                                style="@style/textBoldBlue"
+                                p1:singleLine="true"
+                                p1:gravity="left"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:layout_weight="0.95" />
+                            <ImageView
+                                p1:src="@drawable/bank"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="wrap_content"
+                                p1:id="@+id/imageView2"
+                                p1:tint="@color/primary_dark"
+                                p1:layout_gravity="right"
+                                p1:layout_weight="0.05" />
+                        </LinearLayout>
+                        <LinearLayout
+                            p1:orientation="horizontal"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout3"
+                            p1:weightSum="1"
+                            p1:gravity="center_vertical"
+                            p1:layout_marginBottom="4dp"
+                            p1:layout_marginTop="4dp">
+                            <TextView
+                                p1:text="Account Number "
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/textView1"
+                                p1:layout_weight="0.1"
+                                style="@style/helpingText" />
+                            <TextView
+                                p1:text="@string/default_accNumber"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/accountDetails_AccountNumber"
+                                p1:layout_weight="0.9"
+                                style="@style/availableBalance"
+                                p1:singleLine="true"
+                                p1:gravity="right" />
+                        </LinearLayout>
+                        <LinearLayout
+                            p1:orientation="horizontal"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout3"
+                            p1:weightSum="1"
+                            p1:gravity="center_vertical"
+                            p1:layout_marginBottom="4dp"
+                            p1:layout_marginTop="4dp">
+                            <TextView
+                                p1:text="Customer ID "
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/textView1"
+                                p1:layout_weight="0.1"
+                                style="@style/helpingText" />
+                            <TextView
+                                p1:text="@string/default_accNumber"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/accountDetails_AccountCustID"
+                                p1:layout_weight="0.9"
+                                style="@style/availableBalance"
+                                p1:singleLine="true"
+                                p1:gravity="right" />
+                        </LinearLayout>
+                        <LinearLayout
+                            p1:orientation="horizontal"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout3"
+                            p1:weightSum="1"
+                            p1:gravity="center_vertical"
+                            p1:layout_marginBottom="4dp"
+                            p1:layout_marginTop="4dp">
+                            <TextView
+                                p1:text="Available Balance "
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/textView1"
+                                p1:layout_weight="0.4"
+                                style="@style/helpingText" />
+                            <LinearLayout
+                                p1:orientation="horizontal"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/linearLayout2"
+                                p1:layout_weight="0.6"
+                                p1:gravity="bottom|right">
+                                <ImageView
+                                    p1:src="@drawable/currency_sign"
+                                    p1:layout_width="16dp"
+                                    p1:layout_height="16dp"
+                                    p1:id="@+id/imageView1"
+                                    p1:tint="@color/primary_dark"
+                                    p1:layout_marginRight="2dp"
+                                    style="@style/blueTint"
+                                    p1:layout_gravity="center_vertical" />
+                                <TextView
+                                    p1:text="@string/default_balance"
+                                    p1:layout_width="wrap_content"
+                                    p1:layout_height="match_parent"
+                                    p1:id="@+id/accountDetails_AccountBalance"
+                                    p1:gravity="right"
+                                    style="@style/availableBalance"
+                                    p1:layout_marginLeft="2dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            p1:orientation="horizontal"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout3"
+                            p1:weightSum="1"
+                            p1:gravity="center_vertical"
+                            p1:layout_marginBottom="4dp"
+                            p1:layout_marginTop="4dp">
+                            <TextView
+                                p1:text="IFSC "
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/textView1"
+                                p1:layout_weight="0.1"
+                                style="@style/helpingText" />
+                            <TextView
+                                p1:text="@string/default_ifsc"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/accountDetails_AccountIFSC"
+                                p1:layout_weight="0.9"
+                                style="@style/availableBalance"
+                                p1:singleLine="true"
+                                p1:gravity="right" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    p1:minWidth="25px"
+                    p1:minHeight="25px"
+                    p1:layout_width="fill_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/cardView1"
+                    p1:layout_alignParentTop="true"
+                    p1:layout_below="@id/linearLayout1"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp"
+                    p1:clipToPadding="false"
+                    app:cardUseCompatPadding="false"
+                    p1:elevation="4dp"
+                    p1:layout_marginRight="4dp"
+                    p1:layout_marginLeft="4dp"   
+                    p1:layout_marginBottom="8dp"
+                    p1:layout_marginTop="8dp"
+                    p1:visibility="visible">
+                    <LinearLayout
+                        p1:orientation="vertical"
+                        p1:minWidth="25px"
+                        p1:minHeight="25px"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="match_parent"
+                        p1:id="@+id/linearLayout2"
+                        p1:padding="20dp">
+                        <LinearLayout
+                            p1:orientation="horizontal"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout4"
+                            p1:weightSum="1"
+                            p1:layout_marginBottom="16dp">
+                            <TextView
+                                p1:text="Your Personal Details"
+                                p1:id="@+id/textView2"
+                                style="@style/textBoldBlue"
+                                p1:singleLine="true"
+                                p1:gravity="left"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:layout_weight="0.95" />
+                            <ImageView
+                                p1:src="@drawable/account_circle"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="wrap_content"
+                                p1:id="@+id/imageView2"
+                                p1:tint="@color/primary_dark"
+                                p1:layout_gravity="right"
+                                p1:layout_weight="0.05" />
+                        </LinearLayout>
+                        <LinearLayout
+                            p1:orientation="horizontal"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout3"
+                            p1:weightSum="1"
+                            p1:gravity="center_vertical"
+                            p1:layout_marginBottom="4dp"
+                            p1:layout_marginTop="4dp">
+                            <TextView
+                                p1:text="Registered Name "
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/textView1"
+                                p1:layout_weight="0.1"
+                                style="@style/helpingText" />
+                            <TextView
+                                p1:text="@string/default_customerName"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/accountDetails_SelfName"
+                                p1:layout_weight="0.9"
+                                style="@style/availableBalance"
+                                p1:singleLine="true"
+                                p1:gravity="right" />
+                        </LinearLayout>
+                        <LinearLayout
+                            p1:orientation="horizontal"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout3"
+                            p1:weightSum="1"
+                            p1:gravity="center_vertical"
+                            p1:layout_marginBottom="4dp"
+                            p1:layout_marginTop="4dp">
+                            <TextView
+                                p1:text="Registered Phone Number "
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/textView1"
+                                p1:layout_weight="0.1"
+                                style="@style/helpingText"
+                                p1:singleLine="true" />
+                            <TextView
+                                p1:text="@string/default_balance"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/accountDetails_SelfPhone"
+                                p1:layout_weight="0.9"
+                                style="@style/availableBalance"
+                                p1:singleLine="true"
+                                p1:gravity="right" />
+                        </LinearLayout>
+                        <LinearLayout
+                            p1:orientation="horizontal"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout3"
+                            p1:weightSum="1"
+                            p1:gravity="center_vertical"
+                            p1:layout_marginBottom="4dp"
+                            p1:layout_marginTop="4dp">
+                            <TextView
+                                p1:text="UIDAI "
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/textView1"
+                                p1:layout_weight="0.1"
+                                style="@style/helpingText" />
+                            <TextView
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/accountDetails_SelfUIDAI"
+                                p1:layout_weight="0.9"
+                                style="@style/availableBalance"
+                                p1:singleLine="true"
+                                p1:gravity="right"
+                                p1:text="@string/default_uidai" />
+                        </LinearLayout>
+                        <LinearLayout
+                            p1:orientation="horizontal"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout3"
+                            p1:weightSum="1"
+                            p1:gravity="center_vertical"
+                            p1:layout_marginBottom="4dp"
+                            p1:layout_marginTop="4dp">
+                            <TextView
+                                p1:text="Registered PAN"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/textView1"
+                                p1:layout_weight="0.1"
+                                style="@style/helpingText" />
+                            <TextView
+                                p1:text="@string/default_PAN"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/accountDetails_SelfPAN"
+                                p1:layout_weight="0.9"
+                                style="@style/availableBalance"
+                                p1:singleLine="true"
+                                p1:gravity="right" />
+                        </LinearLayout>
+                        <LinearLayout
+                            p1:orientation="vertical"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout3"
+                            p1:weightSum="1"
+                            p1:gravity="center_vertical"
+                            p1:layout_marginBottom="4dp"
+                            p1:layout_marginTop="4dp">
+                            <TextView
+                                p1:text="Registered Email ID "
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/textView1"
+                                p1:layout_weight="0.1"
+                                style="@style/helpingText" />
+                            <TextView
+                                p1:text="@string/default_Email"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/accountDetails_SelfEmailID"
+                                p1:layout_weight="0.9"
+                                style="@style/availableBalance"
+                                p1:singleLine="true"
+                                p1:gravity="right" />
+                        </LinearLayout>
+                        <LinearLayout
+                            p1:orientation="vertical"
+                            p1:layout_width="match_parent"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/linearLayout3"
+                            p1:weightSum="1"
+                            p1:gravity="center_vertical"
+                            p1:layout_marginBottom="4dp"
+                            p1:layout_marginTop="4dp">
+                            <TextView
+                                p1:text="Registered Address "
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/textView1"
+                                p1:layout_weight="0.1"
+                                style="@style/helpingText" />
+                            <TextView
+                                p1:text="@string/default_Address"
+                                p1:layout_width="wrap_content"
+                                p1:layout_height="match_parent"
+                                p1:id="@+id/accountDetails_SelfAddress"
+                                p1:layout_weight="0.9"
+                                style="@style/availableBalance"
+                                p1:singleLine="false"
+                                p1:gravity="left" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <TextView
+                    p1:text="@string/notEditableText"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/textView3"
+                    p1:layout_marginBottom="12dp"
+                    p1:layout_marginTop="12dp"
+                    p1:layout_marginRight="4dp"
+                    p1:layout_marginLeft="4dp"  
+                    style="@style/helpingText"
+                    p1:gravity="center" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
